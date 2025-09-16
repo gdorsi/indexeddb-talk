@@ -15,12 +15,6 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
-# open graph
-seoMeta:
-  # By default, Slidev will use ./og-image.png if it exists,
-  # or generate one from the first slide if not found.
-  ogImage: auto
-  # ogImage: https://cover.sli.dev
 ---
 # IndexedDB
 
@@ -29,6 +23,10 @@ seoMeta:
 ---
 
 # Cosa è IndexedDB?
+
+<style>
+li { font-size: 1.8rem; }
+</style>
 
 - **Database NoSQL** per il browser
 - Memorizzazione lato client di **grandi quantità di dati strutturati**
@@ -84,6 +82,11 @@ function openDB(done) {
 ---
 
 # Object Stores
+
+
+<style>
+li { font-size: 1.6rem; }
+</style>
 
 ## Cosa sono?
 - **Contenitori** per i dati (simili alle tabelle)
@@ -170,6 +173,11 @@ const productsInMyRange = await db.getAllFromIndex(
 
 # Pain Point #1: Transaction Isolation
 
+
+<style>
+li { font-size: 1.6rem; }
+</style>
+
 ## IndexedDB è un database transazionale
 
 - Tutto avviene tramite transaction
@@ -184,9 +192,13 @@ const productsInMyRange = await db.getAllFromIndex(
 ---
 
 # Pain Point #2: Autocommit delle Transazioni
+.
 
-## Il Problema
-- Le transazioni si **chiudono automaticamente** dopo un microtask se non ci sono "operazioni pending"
+<style>
+p { font-size: 1.6rem; }
+</style>
+
+Le transazioni si **chiudono automaticamente** dopo un microtask se non ci sono "operazioni pending"
 
 ```javascript
 // ❌ SBAGLIATO
@@ -202,17 +214,21 @@ await tx.done;
 
 ---
 
-# Pain Point #3: State deleted after 7 days of inactivity (Safari)
+# Pain Point #3: Safari
+I dati vengono cancellati dopo 7 giorni di inattività
 
-Venduto come "Intelligent Tracking Prevention (ITP)"
+<style>
+p { font-size: 1.6rem; }
+</style>
+
+Venduto come "Intelligent Tracking Prevention"
 
 Rende IndexedDB usabile solo come "disposable storage"
 
 ---
 
-# Alternative Moderne: OPFS
-
-## Origin Private File System
+# Origin Private File System
+Un filesystem privato con API sincrone e asincrone
 
 ```javascript
 // Accesso al file system privato
@@ -232,6 +248,11 @@ const content = await file.text();
 ---
 
 # Origin Private File System
+
+
+<style>
+li { font-size: 1.6rem; }
+</style>
 
 - Ci permette di avere Database **veri** al costo però di doverli caricare
 - Devtools praticamente inesistenti
