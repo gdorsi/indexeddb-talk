@@ -260,4 +260,4 @@ const content = await file.text();
 
 **Contatti:**
 - GitHub: [@gdorsi]
-- Twitter: [@gdorsi]
+- Discord di RomaJS
