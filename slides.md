@@ -15,10 +15,16 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
+# open graph
+seoMeta:
+  # By default, Slidev will use ./og-image.png if it exists,
+  # or generate one from the first slide if not found.
+  ogImage: auto
+  # ogImage: https://cover.sli.dev
 ---
 # IndexedDB
 
-## Il Database che non volevamo ma impariamo ad amare
+## Il Database che non volevamo ma abbiamo imparato ad amare
 
 ---
 
@@ -229,6 +235,8 @@ const content = await file.text();
 
 - Ci permette di avere Database **veri** al costo però di doverli caricare
 - Devtools praticamente inesistenti
+- Non soggetto al "Intelligent" Tracking Prevention di Safari
+- Usabile solo in secure contexts
 
 ---
 
@@ -250,6 +258,7 @@ const content = await file.text();
 - [idb Library](https://github.com/jakearchibald/idb)
 - [The pain and anguish of using IndexedDB](http://gist.github.com/pesterhazy/4de96193af89a6dd5ce682ce2adff49a) outdated, ma interessante
 - [MDN OPFS Guide](https://developer.mozilla.org/en-US/docs/Web/API/File_System_API/Origin_private_file_system)
+- [OPFS docs di Safari](https://webkit.org/blog/12257/the-file-system-access-api-with-origin-private-file-system/)
 
 **Contatti:**
 - GitHub: [@gdorsi]
