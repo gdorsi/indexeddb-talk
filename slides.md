@@ -48,9 +48,8 @@ seoMeta:
 ## IndexedDB (2010-2012)
 - Nikunj Mehta da Oracle propose IndexedDB (quelli che hanno il trademark su JS!)
 - **Accettato rapidamente** da tutti i browser
-- API più complessa ma più potente
-- Standard W3C ufficiale
-- Implementato su Firefox usando SQLite ha!
+- Brutto, meno usabile ma standardizzabile
+- Implementato su Firefox usando SQLite...
 
 ---
 
