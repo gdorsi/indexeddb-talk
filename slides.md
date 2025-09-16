@@ -253,10 +253,9 @@ const content = await file.text();
 ## Domande?
 
 **Risorse:**
-- [MDN IndexedDB Guide](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
 - [idb Library](https://github.com/jakearchibald/idb)
 - [The pain and anguish of using IndexedDB](http://gist.github.com/pesterhazy/4de96193af89a6dd5ce682ce2adff49a) outdated, ma interessante
-- [OPFS Spec](https://fs.spec.whatwg.org/)
+- [MDN OPFS Guide](https://developer.mozilla.org/en-US/docs/Web/API/File_System_API/Origin_private_file_system)
 
 **Contatti:**
 - GitHub: [@gdorsi]
