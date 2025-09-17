@@ -227,6 +227,19 @@ Rende IndexedDB usabile solo come "disposable storage"
 
 ---
 
+# Pain Point #4: Performance
+Molto complicato da ottimizzare
+
+<style>
+p { font-size: 1.6rem; }
+</style>
+
+- Data la natura transazionale, tante piccole query sono lente
+- Ma non ci sono API per aggregare dati (e.g semplici operatori OR)
+- Fun: absurd-sql ha dimostrato che SQLite sopra IndexedDB è più veloce
+
+---
+
 # Origin Private File System
 Un filesystem privato con API sincrone e asincrone
 
